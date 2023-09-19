@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiGithub } from 'react-icons/fi';
+import { FiGithub, FiInstagram } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -20,6 +20,12 @@ export default function Footer() {
             className="text-4xl btn btn-ghost rounded-btn"
           >
             <FiGithub />
+          </Link>
+          <Link
+            to={'https://github.com/jangdu/'}
+            className="text-4xl btn btn-ghost rounded-btn"
+          >
+            <FiInstagram />
           </Link>
           <Link>
             <svg
