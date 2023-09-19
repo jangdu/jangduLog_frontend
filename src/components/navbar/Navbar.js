@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="flex-1">
           <Link
             to={'/'}
-            className="btn btn-ghost normal-case text-xl sm:font-bold sm:text-2xl"
+            className="btn btn-ghost normal-case text-xl font-bold sm:text-2xl"
           >
             JangDoLog
           </Link>
