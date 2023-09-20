@@ -62,6 +62,7 @@ export default function PostList() {
             tags={tags}
             setCurrentTag={setCurrentTag}
             currentTag={currentTag}
+            setCurrentPage={setCurrentPage}
           />
         </div>
         <div className="w-full max-w-2xl mx-auto flex flex-col gap-5">
