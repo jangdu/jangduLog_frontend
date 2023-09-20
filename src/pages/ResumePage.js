@@ -1,5 +1,10 @@
 import React from 'react';
+import GridNotion from '../components/resume/GridNotion';
 
 export default function ResumePage() {
-  return <div>이력서 페이지</div>;
+  return (
+    <div>
+      <GridNotion />
+    </div>
+  );
 }
