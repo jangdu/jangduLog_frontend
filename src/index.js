@@ -10,6 +10,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import ResumePage from './pages/ResumePage';
 import PostsPage from './pages/PostsPage';
 import PostDetailPage from './pages/PostDetailPage';
+import WritePostPage from './pages/WritePostPage';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/posts/:postId',
         element: <PostDetailPage />,
+      },
+      {
+        path: '/write',
+        element: <WritePostPage />,
       },
     ],
   },
