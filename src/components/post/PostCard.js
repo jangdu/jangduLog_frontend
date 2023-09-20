@@ -9,7 +9,7 @@ export default function PostCard({ post }) {
     setClickedCard(true);
 
     setTimeout(() => {
-      navigate('/products/1');
+      navigate(`/posts/${post.id}`);
     }, 500);
   };
   //   ${clickedCard && 'scale-[500%] z-50 translate-y-36 duration-1000'}

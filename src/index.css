@@ -11,7 +11,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
 import ResumePage from './pages/ResumePage';
 import PostsPage from './pages/PostsPage';
+import PostDetailPage from './pages/PostDetailPage';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/posts',
         element: <PostsPage />,
+      },
+      {
+        path: '/posts/:postId',
+        element: <PostDetailPage />,
       },
     ],
   },
