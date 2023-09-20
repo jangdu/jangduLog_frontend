@@ -22,11 +22,15 @@ export default function Navbar() {
         >
           Posts
         </Link>
-        <div className="dropdown dropdown-end">
+        <div
+          className="dropdown-hover dropdown dropdown-end"
+          onMouseLeave={() => setMenuOpen(false)}
+        >
           <label
             tabIndex={0}
             className="flex flex-rowbtn-ghost p-1 sm:p-2 btn btn-ghost rounded-btn items-center"
-            onClick={() => setMenuOpen(!menuOpen)}
+            // onClick={() => setMenuOpen(!menuOpen)}
+            onMouseOver={() => setMenuOpen(true)}
           >
             Readme <BiChevronDown />
           </label>
