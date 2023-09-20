@@ -3,12 +3,12 @@ import 'prismjs/themes/prism-tomorrow.css'; //
 import { NotionRenderer } from 'react-notion';
 
 import React, { useState, useEffect } from 'react';
+import LoadingUi from '../ui/LoadingUi';
 
 export default function GridNotion() {
-  const [response, setResponse] = useState({});
+  const [response, setResponse] = useState();
 
   useEffect(() => {
-    // 두번째 방법
     const NOTION_PAGE_ID = 'a63ab92708594c13b06661413801419b';
     fetch(`https://notion-api.splitbee.io/v1/page/${NOTION_PAGE_ID}`)
       .then((res) => res.json())
@@ -17,18 +17,22 @@ export default function GridNotion() {
       });
   }, []);
 
-  return (
-    <div
-      data-theme="pastel"
-      className="max-w-4xl md:w-[100%] mx-auto mockup-window bg-base-200"
-    >
-      <div className="bg-white">
-        <NotionRenderer
-          // blockMap={staticResponse}
-          blockMap={response}
-          fullPage={true}
-        />
+  if (response) {
+    return (
+      <div
+        data-theme="pastel"
+        className="max-w-4xl md:w-[100%] mx-auto mockup-window bg-base-200"
+      >
+        <div className="bg-white p-3 sm:px-8">
+          <NotionRenderer
+            // blockMap={staticResponse}
+            blockMap={response}
+            fullPage={false}
+          />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return <LoadingUi />;
+  }
 }
