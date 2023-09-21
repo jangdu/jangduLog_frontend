@@ -5,7 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 export default function Footer() {
   return (
-    <footer className="footer p-10 bg-accent text-retro-content justify-between xl:px-[20%]">
+    <footer className="footer p-10 bg-base-200 text-retro-content justify-between xl:px-[20%]">
       <aside>
         <h1 className="font-bold text-xl">@jangdu</h1>
         <p className="font-semibold text-lg text-slate-200 flex flex-row items-center gap-2">

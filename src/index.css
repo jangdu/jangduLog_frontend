@@ -31,3 +31,7 @@ pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.titleFont {
+  font-family: 'Jua', sans-serif;
+}
