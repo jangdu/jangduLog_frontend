@@ -64,7 +64,7 @@ export default function PostDetailPage() {
         <div className="w-full">
           <MarkdownViewerUi content={post.content}></MarkdownViewerUi>
         </div>
-        <Comment />
+        <Comment id={post.id} />
       </div>
     );
   } else {
