@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'animate.css';
 
 export default function PostCard({ post }) {
   const navigate = useNavigate();
@@ -7,18 +8,16 @@ export default function PostCard({ post }) {
 
   const handleClickedCard = () => {
     setClickedCard(true);
-
-    setTimeout(() => {
-      navigate(`/posts/${post.id}`);
-    }, 500);
+    navigate(`/posts/${post.id}`);
   };
   //   ${clickedCard && 'scale-[500%] z-50 translate-y-36 duration-1000'}
 
   return (
     <div
       className={`mockup-browser border bg-base-300 shadow-md sm:shadow-xl cursor-pointer ${
-        !clickedCard && 'hover:scale-[103%]'
-      } transition duration-500 ease-in-out 
+        !clickedCard &&
+        'hover:scale-[103%] transition-transform ease-in-out duration-500'
+      } ${clickedCard && ''}
       `}
       onClick={handleClickedCard}
     >
