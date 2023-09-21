@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import LoadingUi from '../components/ui/LoadingUi';
 import MarkdownViewerUi from '../components/ui/MarkDownViewerUi';
+import Comment from '../components/post/Comment';
 
 export default function PostDetailPage() {
   const { postId } = useParams();
@@ -60,6 +61,7 @@ export default function PostDetailPage() {
         <div className="w-full">
           <MarkdownViewerUi content={post.content}></MarkdownViewerUi>
         </div>
+        <Comment />
       </div>
     );
   } else {
