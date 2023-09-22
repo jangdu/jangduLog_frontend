@@ -4,7 +4,7 @@ export default function Portfolio() {
   const [checkCollapse, setCheckCollapse] = useState(true);
 
   return (
-    <div className="collapse bg-base-200">
+    <div className="collapse collapse-arrow bg-base-200">
       <input
         type="checkbox"
         checked={checkCollapse}
