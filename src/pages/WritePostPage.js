@@ -9,13 +9,7 @@ export default function WritePostPage() {
   const [newPost, setNewPost] = useState({});
   const [isUploading, setIsUpLoading] = useState(false);
 
-  useEffect(() => {
-    const password = prompt('비번');
-
-    if (password !== '1111') {
-      navigate(`/posts`);
-    }
-  });
+  useEffect(() => {});
 
   const handleResizeHeight = (e) => {
     e.target.style.height = 'auto';

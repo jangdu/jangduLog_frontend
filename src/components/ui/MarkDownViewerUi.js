@@ -38,12 +38,12 @@ export default function MarkdownViewerUi({ content }) {
               PreTag="pre"
               {...props}
               style={vscDarkPlus}
-              className="rounded-md my-4"
+              className="rounded-md scroll"
             >
               {String(children).replace(/\n$/, '')}
             </SyntaxHighlighter>
           ) : (
-            <code className={'text-slate-500 font-semibold'} {...props}>
+            <code className={'text-slate-500 font-semibold scroll'} {...props}>
               {children}
             </code>
           );

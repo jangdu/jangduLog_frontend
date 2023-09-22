@@ -22,12 +22,12 @@ pre {
 }
 
 /* 스크롤바 숨기기 */
-::-webkit-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .no-scrollbar {
+  display: none;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
