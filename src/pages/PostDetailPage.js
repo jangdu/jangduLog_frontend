@@ -35,7 +35,7 @@ export default function PostDetailPage() {
 
   if (post) {
     return (
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:p-4">
         <div className="absolute top-14 max-h-36 sm:top-20 sm:max-h-72 left-0 overflow-hidden object-none w-full">
           <img alt={post.title} src={post.imgUrl} className="w-full "></img>
         </div>
@@ -61,6 +61,7 @@ export default function PostDetailPage() {
             {post.createdAt.substr(0, 10)}
           </div>
         </header>
+        <div className="w-[70%] min-w-[300px] mx-auto bg-slate-500 my-2 sm:my-6 h-1"></div>
         <div className="w-full">
           <MarkdownViewerUi content={post.content}></MarkdownViewerUi>
         </div>

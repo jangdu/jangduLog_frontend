@@ -7,7 +7,7 @@ export default function MarkdownViewerUi({ content }) {
   return (
     <ReactMarkdown
       children={content}
-      className="prose my-4 overflow-auto text-lg text-left sm:px-4"
+      className="prose my-4 overflow-auto text-lg text-left sm:px-8"
       components={{
         h1: ({ children }) => (
           <h1 className="text-4xl font-bold mt-8 my-4 ">{children}</h1>
