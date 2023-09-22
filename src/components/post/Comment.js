@@ -9,7 +9,7 @@ export default function Comment({ id }) {
     scriptEl.src = 'https://utteranc.es/client.js';
     scriptEl.setAttribute('repo', 'jangdu/DohoLog-comments');
     scriptEl.setAttribute('issue-term', `posts/${id}`);
-    scriptEl.setAttribute('theme', 'github-dark');
+    scriptEl.setAttribute('theme', 'github-light');
     scriptEl.setAttribute('crossorigin', 'anonymous');
     commentsEl.current.appendChild(scriptEl);
   });
