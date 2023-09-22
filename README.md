@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+### JangduLog ( 2023.03 ~ )
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+개발 잘하시는 분들이 운영하시는 개인 블로그들에 대한 동경으로 시작한 프로젝트
 
-## Available Scripts
+- project_posts: https://blog.jangdu.site/posts?tagId=9
 
-In the project directory, you can run:
+- URL : https://blog.jangdu.site (진행중)
 
-### `npm start`
+  - Git_backend : https://github.com/jangdu/jangduLog_backend
+  - Git_frontend : https://github.com/jangdu/jangduLog_frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Skill : `Nest.js`, `React.js`, `MySQL`, `Redis`, `S3`, `CloudFront`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `firebase`를 이용한 `react` 프론트엔드 개발 ( 2023.03 ~ 2023.04 )
 
-### `npm test`
+- `Nest.js`, `MySQL(TypeORM)`로 마이그레이션 개발 ( 2023.09 ~ )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Firebase를 사용해 쉽게 프론트를 개발했지만, 이후 데이터 관리 및 기능 추가 시 복잡한 쿼리작업 등의 한계를 느껴 nest.js로 마이그레이션 진행중
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - frontend
+    - AWS `CloudFront`, `S3`, `Route53`으로 React 프로젝트 https 배포
+    - `GithubAction`, `CI/CD` 배포 자동화 (https://blog.jangdu.site/posts/7)
