@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function AboutMe() {
   return (
     <div className=" bg-base-200 rounded-md">
-      <div className="text-2xl font-bold sm:text-center p-4 sm:p-11">
+      <div className="text-2xl m-2 sm:m-4 sm:text-3xl font-bold m">
         About Me
       </div>
       <div className="flex flex-row justify-center gap-4">
@@ -77,21 +77,21 @@ export default function AboutMe() {
               <h2 className="font-bold text-2xl">Skills</h2>
               <p className="font-bold">
                 Languages
-                <p className="ms-2 text-base font-normal">
+                <span className="ms-2 text-base font-normal">
                   JavaScript(ES6), Typescript, HTML5, CSS
-                </p>
+                </span>
               </p>
               <p className="font-bold">
                 Framework
-                <p className="ms-2 text-base font-normal">
+                <span className="ms-2 text-base font-normal">
                   React, Express.js, Nest.js
-                </p>
+                </span>
               </p>
               <p className="font-bold">
                 Infra
-                <p className="ms-2 text-base font-normal">
+                <span className="ms-2 text-base font-normal">
                   AWS: Lambda, EC2, RDS, CloudFront, S3, Route53
-                </p>
+                </span>
               </p>
             </div>
           </div>
