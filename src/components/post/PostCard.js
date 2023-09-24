@@ -14,20 +14,16 @@ export default function PostCard({ post }) {
 
   return (
     <div
-      className={`mockup-browser border bg-base-300 shadow-md sm:shadow-xl cursor-pointer ${
+      className={`bg-base-100 rounded-md sm:rounded-lg overflow-hidden shadow-md sm:shadow-xl cursor-pointer ${
         !clickedCard &&
         'hover:scale-[103%] transition-transform ease-in-out duration-500'
       } ${clickedCard && ''}
       `}
       onClick={handleClickedCard}
     >
-      <div className="mockup-browser-toolbar">
-        <div className="input">https://jangdu.site/posts/{post.id}</div>
-      </div>
-
       <div className="flex justify-center bg-base-200 w-full">
         <div className="flex flex-col w-full">
-          <div className="overflow-hidden w-full mb-2 bg-white rounded-b-sm sm:rounded-b-md">
+          <div className="overflow-hidden w-full mb-2 bg-base-200">
             <img
               alt={post.title}
               src={post.imgUrl}
@@ -37,7 +33,7 @@ export default function PostCard({ post }) {
           <h1 className="text-xl sm:text-2xl px-4 font-bold mb-4 ms-2 overflow-hidden">
             {post.title}
           </h1>
-          <h1 className="my-2 text-slate-600 font-semibold me-4 flex justify-end">
+          <h1 className="my-2 text-slate-600 font-semibold ms-4 flex">
             {post.createdAt.substr(0, 10)}
           </h1>
         </div>

@@ -39,7 +39,7 @@ export default function Navbar() {
               tabIndex={0}
               className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              {/* <li>
                 <Link
                   to={'resumes'}
                   className="btn btn-ghost flex content-center"
@@ -47,7 +47,7 @@ export default function Navbar() {
                 >
                   Resume
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   to={'portfolio'}
