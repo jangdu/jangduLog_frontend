@@ -11,6 +11,9 @@ import ResumePage from './pages/ResumePage';
 import PostsPage from './pages/PostsPage';
 import PostDetailPage from './pages/PostDetailPage';
 import WritePostPage from './pages/WritePostPage';
+import ReactGA from 'react-ga';
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
+ReactGA.initialize(TRACKING_ID);
 
 const router = createBrowserRouter([
   {
