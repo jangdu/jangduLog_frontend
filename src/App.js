@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import RouteChangeTracker from './components/RouteChangeTracker';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -13,6 +14,8 @@ function ScrollToTop() {
   return null;
 }
 function App() {
+  RouteChangeTracker();
+
   return (
     <div className="">
       <ScrollToTop />
