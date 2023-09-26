@@ -55,8 +55,8 @@ export default function PostDetailPage() {
                 );
               })}
             </div>
-            <div className="flex">
-              <p>{post.views}</p>
+            <div className="flex text-slate-500">
+              <p>조회수 {post.views}</p>
             </div>
           </div>
           <h1 className="font-bold text-2xl sm:text-4xl my-2 ">{post.title}</h1>
