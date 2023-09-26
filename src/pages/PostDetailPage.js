@@ -41,7 +41,7 @@ export default function PostDetailPage() {
         </div>
         <div className="h-36 sm:h-72"></div>
         <header className="flex flex-col mt-4 sm:mt-8">
-          <div className="flex">
+          <div className="flex justify-between">
             <div className="flex flex-row gap-1">
               {post.post_tag.map((tagItem) => {
                 return (
@@ -54,6 +54,9 @@ export default function PostDetailPage() {
                   </p>
                 );
               })}
+            </div>
+            <div className="flex">
+              <p>{post.views}</p>
             </div>
           </div>
           <h1 className="font-bold text-2xl sm:text-4xl my-2 ">{post.title}</h1>
