@@ -7,7 +7,7 @@ const portfolioData = [
     description: '개인 블로그 프로젝트',
     content:
       'Firebase를 사용해 쉽게 프론트 개발 이후, 데이터 관리 및 기능 추가 시 복잡한 쿼리작업 등의 한계를 느껴 nest.js로 마이그레이션 진행중 ( 2023-08 ~ )',
-    notionId: '7b254ac4027b4b5dbb6b81794d0358c8',
+    notionId: '9ac3a31d938e473ca1d64b60b3cd066e',
     date: '2023-03 ~ (진행중)',
     skills: [
       'typescript',
