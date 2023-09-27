@@ -14,14 +14,14 @@ export default function PostCard({ post }) {
 
   return (
     <div
-      className={`bg-base-100 rounded-md sm:rounded-lg overflow-hidden shadow-md sm:shadow-xl cursor-pointer ${
+      className={`bg-base-100 w-[100%] h-full rounded-md sm:rounded-lg overflow-hidden shadow-md sm:shadow-xl cursor-pointer ${
         !clickedCard &&
         'hover:scale-[103%] transition-transform ease-in-out duration-500'
       } ${clickedCard && ''}
       `}
       onClick={handleClickedCard}
     >
-      <div className="flex justify-center bg-base-200 w-full">
+      <div className="flex justify-center bg-base-200 h-full w-full">
         <div className="flex flex-col w-full">
           <div className="overflow-hidden w-full mb-2 bg-base-200">
             <img
