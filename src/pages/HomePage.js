@@ -1,5 +1,10 @@
 import React from 'react';
+import PostList from '../components/post/PostList';
 
 export default function HomePage() {
-  return <div>this page is home</div>;
+  return (
+    <div>
+      <PostList />
+    </div>
+  );
 }
