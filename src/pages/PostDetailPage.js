@@ -8,6 +8,7 @@ import Comment from '../components/post/Comment';
 export default function PostDetailPage() {
   const { postId } = useParams();
   const [post, setPost] = useState();
+  const [postView, setPostView] = useState();
 
   const navigate = useNavigate();
 
@@ -24,7 +25,8 @@ export default function PostDetailPage() {
       );
 
       if (response.status === 200) {
-        setPost(response.data);
+        setPost(response.data.post);
+        setPostView(response.data.views);
       } else {
         alert('데이터 가져오기 실패');
       }
@@ -56,7 +58,7 @@ export default function PostDetailPage() {
               })}
             </div>
             <div className="flex text-slate-500">
-              <p>조회수 {post.views}</p>
+              <p>조회수 {postView}</p>
             </div>
           </div>
           <h1 className="font-bold text-2xl sm:text-4xl my-2 ">{post.title}</h1>
