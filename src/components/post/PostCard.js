@@ -14,7 +14,7 @@ export default function PostCard({ post }) {
 
   return (
     <div
-      className={`bg-base-100 w-[100%] h-full rounded-md sm:rounded-lg overflow-hidden shadow-md sm:shadow-xl cursor-pointer ${
+      className={`bg-base-100 w-[100%] h-full border-b border-slate-300 rounded-md sm:rounded-lg overflow-hidden shadow-md sm:shadow-xl cursor-pointer ${
         !clickedCard &&
         'hover:scale-[103%] transition-transform ease-in-out duration-500'
       } ${clickedCard && ''}
