@@ -37,7 +37,7 @@ export default function PostDetailPage() {
 
   if (post) {
     return (
-      <div className="flex flex-col sm:p-4">
+      <div className="max-w-4xl mx-auto flex flex-col sm:p-4">
         <div className="absolute top-14 max-h-36 sm:top-20 sm:max-h-72 left-0 overflow-hidden object-none w-full">
           <img alt={post.title} src={post.imgUrl} className="w-full "></img>
         </div>
