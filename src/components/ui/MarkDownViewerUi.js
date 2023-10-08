@@ -25,9 +25,7 @@ export default function MarkdownViewerUi({ content }) {
         li: ({ children }) => (
           <li className="my-2 list-item list-disc ms-8">{children}</li>
         ),
-        p: ({ children }) => (
-          <p className="overflow-x-scroll max-w-full">{children}</p>
-        ),
+        p: ({ children }) => <p className="mb-2 max-w-full">{children}</p>,
         br: <div className="my-8"></div>,
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '');
