@@ -20,7 +20,12 @@ const portfolioData = [
       'Github-Action',
     ],
     contentList: [
-      '배포시 빌드 등 반복적인 작업을 CI/CD 배포 자동화를 통해 효율적인 개발 환경 구성',
+      'Swagger : frontend와의 소통을 위해서 dto, nest-swagger를 사용한 [문서 작성 자동화](https://jangdu.site/api/docs)',
+      'CloudFront, S3, EC2, RDS를 사용한 배포',
+      '반복적인 빌드, 배포의 불편을 느껴 CodeDeploy를 사용한 [배포 자동화를 통해 효율적인 개발 환경 구성](https://blog.jangdu.site/posts/7)',
+      '빌드하는 과정 중 문제 발생 시, 배포를 하지않고 중단하도록 구현, 추후 테스트코드 추가 예정',
+      'Firebase를 통한 간단한 DB구축 후, Nest.js로 마이그레이션 백엔드 구현 진행중(2023.09 ~)',
+      '태그 기능을 구현하며 데이터 무결성 및 트랜잭션 관리와 확장성에 용이한 RDBMS의 필요성을 느껴서 MySQL선택',
     ],
   },
   {
